@@ -1,0 +1,90 @@
+@forward 'reset';
+@forward 'header-block';
+@forward 'hero-block';
+@forward 'story-block';
+@forward 'unique-block';
+@forward 'stats-block';
+@forward 'amazing-block';
+
+h1 {
+	font-family: 'Montserrat';
+}
+
+h2 {
+	font-family: 'Kaushan script';
+}
+
+h3 {
+	font-family: 'Raleway';
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&:has(>header>.container>.header>#burger-toggle:checked) {
+		overflow: hidden;
+	}
+}
+
+section {
+	width: 100%;
+}
+
+.container {
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+.separator {
+	border-bottom: 4px solid #fff;
+	width: 115px;
+	margin: 0 auto 50px;
+
+	&_red {
+		border-color: #f38281;
+		margin-bottom: 25px;
+	}
+}
+
+.subtitle {
+	font-family: Kaushan Script;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 760px;
+	}
+
+	.separator {
+		width: 148px;
+	}
+}
+
+
+
+@media (min-width: 1440px) {
+	.container {
+		max-width: 1430px;
+	}
+
+	.separator {
+		width: 170px;
+	}
+}

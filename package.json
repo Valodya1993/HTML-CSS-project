@@ -1,0 +1,24 @@
+{
+  "name": "coursework-tms-2",
+  "version": "1.0.0",
+  "description": "Coursework from TeachMeSkills",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/valodya_93/tms2.git"
+  },
+  "author": "Uladzimir Muliarchyk",
+  "bugs": {
+    "url": "https://gitlab.com/valodya_93/tms2/issues"
+  },
+  "homepage": "https://gitlab.com/valodya_93/tms2#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.1",
+    "parcel": "^2.15.1",
+    "sass": "^1.89.0"
+  }
+}

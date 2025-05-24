@@ -1,0 +1,87 @@
+.clients {
+    padding: 30px 16px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../../images/clients-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__job {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & img {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 24px;
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .clients {
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 35px;
+        }
+
+        &__item {
+            flex-direction: row;
+            column-gap: 30px;
+            align-items: start;
+            &-body {
+                align-items: start;
+            }
+        }
+
+        &__separator {
+            margin: 0 0 25px 0 !important;
+        }
+
+        &__desc {
+            width: 230px;
+            text-align: start !important;
+        }
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    .clients {
+        &__title {
+            font-size: 24px;
+        }
+
+        &__job {
+            width: 18px;
+        }
+
+        &__desc {
+            width: 550px;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.review {
+    background-color: #f8f8f8;
+    padding: 30px 16px;
+    height: 100%;
+
+    &_white-bg {
+        background-color: #fff;
+    }
+
+    &__image {
+        display: none;
+        border: 2px solid #95e1d3;
+        margin-right: 38px;
+
+        &_second {
+            width: 116px;
+            height: 116px;
+            margin: 0 auto 38px;
+
+            & img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__block {
+        margin: 30px 30px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__body {
+        width: fit-content;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        font-family: Raleway;
+        font-weight: 500;
+        color: #a9afb1;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 100%;
+        vertical-align: middle;
+    }
+
+    &__author {
+        font-size: 18px;
+        margin-left: 40px;
+        margin-bottom: 0 !important;
+    }
+
+    &__signature {
+        display: flex;
+        align-items: center;
+    }
+
+    &__separator {
+        width: 48px !important;
+        margin: auto 0 !important;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+
+    .review {
+        &__body {
+            width: 80%;
+        }
+
+        &__block {
+            flex-direction: row;
+            margin: 30px 80px 30px;
+        }
+
+        &__image {
+            width: 116px;
+            height: 116px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_second {
+                margin-right: 38px;
+                margin-bottom: 0;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block !important;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .review {
+
+        &__text {
+            font-size: 24px;
+        }
+
+        &__author {
+            font-size: 30px;
+        }
+        &__image {
+            width: 170px;
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_second {
+                width: 170px;
+                height: 170px;
+                margin-right: 38px;
+                margin-bottom: 0;
+            }
+
+            & svg {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}

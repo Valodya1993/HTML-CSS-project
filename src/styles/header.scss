@@ -13,7 +13,9 @@ header {
 		background-position: center;
 		height: 100%;
 	}
+
 }
+
 
 .header {
 	width: 100%;
@@ -106,6 +108,7 @@ header {
 
 	&:checked~.header__nav {
 		display: block;
+		text-align: center;
 	}
 
 	&:checked~.header__label {
@@ -126,7 +129,7 @@ header {
 }
 
 @media (min-width: 768px) {
-    #burger-toggle {
+	#burger-toggle {
 		display: none;
 	}
 

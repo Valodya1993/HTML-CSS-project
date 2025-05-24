@@ -1,0 +1,21 @@
+.latest {
+    padding: 40px 16px;
+    background: linear-gradient(#ffffffe6), url(../../images/latest-blog-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & svg {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        color: #f38281;
+    }
+}

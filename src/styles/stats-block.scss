@@ -55,6 +55,10 @@
 
 @media (min-width: 1440px) {
     .stats {
+        &__stat {
+            width: 270px;
+        }
+
         &__stat-number {
             font-size: 64px;
         }

@@ -132,5 +132,11 @@
         &__item {
             width: 450px;
         }
+
+        &__links {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
     }
 }

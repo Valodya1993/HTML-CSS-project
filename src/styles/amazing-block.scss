@@ -56,8 +56,11 @@
 @media (min-width: 1440px) {
 	.amazing {
 		&__item {
-			width: 350px;
-			gap: 60px 25px;
+			display: flex;
+			flex-direction: column;
+			width: 450px;
+			gap: 5px 0;
+			padding-left: 100px;
 
 			& svg {
 				width: 70px;

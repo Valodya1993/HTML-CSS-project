@@ -41,7 +41,16 @@
                 text-align: center;
                 vertical-align: middle;
                 text-transform: uppercase;
+
+                &:hover {
+                    background-color: #87d2c4;
+                }
+
+                &:active {
+                    background-color: #5c958a;
+                }
             }
+            
         }
 
         & svg {

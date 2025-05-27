@@ -43,13 +43,24 @@
         font-family: Raleway;
         font-weight: 700;
         font-size: 24px;
-        line-height: 25px;
+        line-height: 20px;
         text-align: center;
         vertical-align: middle;
         text-transform: uppercase;
         position: absolute;
         bottom: 20px;
         left: 0;
+
+        & span {
+            display: contents;
+            font-family: Raleway;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
     }
 
     &__info {
@@ -77,6 +88,7 @@
         &__date {
             left: -10px;
         }
+
         &__list {
             flex-direction: row;
         }
@@ -93,6 +105,11 @@
             font-size: 36px;
             line-height: 30px;
             left: -15px;
+
+            & span {
+                font-size: 18px;
+                line-height: 30px;
+            }
         }
 
         &__info-item {

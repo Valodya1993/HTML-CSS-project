@@ -51,7 +51,7 @@
             }
 
             &-mobile {
-                border-radius: 33px;
+                border-radius: 25px;
                 width: 19%;
                 right: 140;
                 bottom: -110;
@@ -64,13 +64,15 @@
     .unique {
         &__devices {
             &-laptop {
+                width: 50%;
                 border-radius: 35px;
             }
 
             &-mobile {
+                width: 15%;
                 border-radius: 37px;
-                right: 180;
-                bottom: -150;
+                right: 290;
+                bottom: -100;
             }
         }
     }

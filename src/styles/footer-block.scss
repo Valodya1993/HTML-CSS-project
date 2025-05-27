@@ -1,0 +1,297 @@
+.footer {
+    padding: 30px 16px;
+    background-color: #f8f8f8;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__info {
+        padding-bottom: 40px;
+        text-align: center;
+
+        &-subscribe {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+
+            & input {
+                width: 100%;
+                height: 36px;
+                border: 1px solid #c6cbcd;
+                padding-left: 30px;
+            }
+
+            & button {
+                width: 100%;
+                height: 36px;
+                background-color: #95e1d3;
+                font-family: Raleway;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 100%;
+                color: #fff;
+                text-align: center;
+                vertical-align: middle;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: #87d2c4;
+                }
+
+                &:active {
+                    background-color: #5c958a;
+                }
+            }
+            
+        }
+
+        & svg {
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-stat {
+            font-family: Raleway;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            & span {
+                font-family: Raleway;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+
+        &-desc {
+            font-family: Raleway;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            vertical-align: middle;
+            color: #c6cbcd;
+            margin-bottom: 20px;
+        }
+
+        &-follow {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            border-top: 1px solid #c6cbcd;
+            padding-top: 5px;
+
+            & p {
+                color: #c6cbcd;
+                margin-top: 5px;
+                font-family: Raleway;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 12px;
+                line-height: 100%;
+                vertical-align: middle;
+            }
+
+            &-links {
+                display: flex;
+                column-gap: 10px;
+            }
+        }
+    }
+
+    &__blogs {
+        margin-bottom: 40px;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 14px;
+        }
+
+        &-item {
+            display: flex;
+            column-gap: 14px;
+
+            &-body {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+
+                & p {
+                    font-family: Raleway;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 100%;
+                    vertical-align: middle;
+                }
+            }
+
+            &-title {
+                font-size: 14px !important;
+            }
+
+            & img {
+                width: 83px;
+                height: 71px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__inst {
+        text-align: center;
+
+        &-foto {
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: repeat(3, 33%);
+            gap: 0.5%;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-btn {
+            font-family: Raleway;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            color: #2d3033;
+        }
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+    .footer {
+        &__inst {
+            text-align: start;
+            width: 233px;
+        }
+
+        &__info {
+            width: 255px;
+            text-align: start;
+
+            &-follow-links {
+                column-gap: 8px;
+            }
+
+            &-subscribe {
+                flex-direction: row;
+
+                & input {
+                    width: 55%;
+                }
+
+                & button {
+                    width: 45%;
+                }
+            }
+        }
+
+        &__block {
+            flex-direction: row;
+            column-gap: 20px;
+            padding-top: 40px;
+        }
+
+        &__title {
+            text-align: start;
+        }
+
+        &__blogs {
+            width: 230px;
+        }
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    .footer {
+
+        &__block {
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        &__inst {
+            width: 280px;
+        }
+
+        &__blogs {
+            width: 450px;
+        }
+
+        &__logo {
+            width: 140px;
+            height: 38px;
+        }
+
+        &__info {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            margin: 0;
+
+            &-desc {
+                font-size: 18px;
+            }
+
+            & svg {
+                margin: 0;
+            }
+
+            &-follow {
+                width: 100%;
+                margin: 0;
+
+                & p {
+                    font-size: 14px;
+                }
+
+                &-links svg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            &-subscribe {
+                width: 100%;
+                margin: 0;
+
+                & input, & button {
+                    height: 55px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

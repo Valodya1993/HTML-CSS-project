@@ -1,0 +1,126 @@
+.stories {
+    padding: 50px 16px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            margin-bottom: 20px;
+        }
+
+        &-desc {
+            text-align: start !important;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__header {
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__date {
+        width: 68px;
+        height: 68px;
+        background-color: #95e1d3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+
+        & span {
+            display: contents;
+            font-family: Raleway;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    }
+
+    &__info {
+        display: flex;
+        column-gap: 25px;
+
+        &-item {
+            display: flex;
+            column-gap: 15px;
+            align-items: center;
+
+            & p {
+                font-family: Raleway;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .stories {
+        &__date {
+            left: -10px;
+        }
+
+        &__list {
+            flex-direction: row;
+        }
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    .stories {
+        &__date {
+            width: 80px;
+            height: 80px;
+            font-size: 36px;
+            line-height: 30px;
+            left: -15px;
+
+            & span {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        &__info-item {
+            & p {
+                font-size: 13px;
+            }
+
+            & svg {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

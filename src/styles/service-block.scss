@@ -1,0 +1,115 @@
+.service {
+    width: 100%;
+    padding: 60px 16px;
+
+    &__subtitle {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__description {
+        margin-bottom: 50px;
+    }
+
+    &__body {
+        & img {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
+        &-description {
+            display: flex;
+            flex-direction: column;
+            row-gap: 18px;
+            padding: 20px 18px;
+
+            & p {
+                font-family: Raleway;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        &-item {
+            border: 1px solid #c6cbcd;
+        }
+
+        &-title {
+            min-height: 78px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #c6cbcd;
+
+            & svg {
+                position: absolute;
+                top: 20px;
+                left: 15px;
+            }
+
+            &-text {
+                margin-left: 75px;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .service {
+        padding: 100px 16px;
+
+        &__body {
+            display: flex;
+            column-gap: 20px;
+
+            & img {
+                width: 370px;
+                height: 366px;
+            }
+
+            &-description {
+                height: 97px;
+                overflow: auto;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    .service {
+        padding: 130px 16px;
+
+        &__body {
+            column-gap: 30px;
+
+            &-list {
+                row-gap: 34px;
+            }
+
+            & img {
+                width: 570px;
+                height: 534px;
+            }
+
+            &-description {
+                height: 170px;
+                overflow: auto;
+            }
+        }
+    }
+}

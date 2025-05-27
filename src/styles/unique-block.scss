@@ -1,0 +1,79 @@
+.unique {
+    padding: 50px 16px 25px;
+    background-image: linear-gradient(#ffffff80), url(../../images/unique-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__subtitle {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__devices {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        &-laptop {
+            border-radius: 15px;
+            width: 100%;
+            background-image: url(../../images/unique-2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &-mobile {
+            position: absolute;
+            bottom: -46px;
+            right: 26px;
+            z-index: 1;
+            border-radius: 15px;
+            width: 30%;
+            background-image: url(../../images/unique-4.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .unique {
+        &__devices {
+            &-laptop {
+                border-radius: 30px;
+                width: 60%;
+            }
+
+            &-mobile {
+                border-radius: 25px;
+                width: 19%;
+                right: 140;
+                bottom: -110;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .unique {
+        &__devices {
+            &-laptop {
+                width: 50%;
+                border-radius: 35px;
+            }
+
+            &-mobile {
+                width: 15%;
+                border-radius: 37px;
+                right: 290;
+                bottom: -100;
+            }
+        }
+    }
+}

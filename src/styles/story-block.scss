@@ -1,0 +1,125 @@
+.story {
+    text-align: center;
+    padding: 60px 16px;
+
+    &__subtitle {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px 0;
+    }
+
+    &__description {
+        padding-bottom: 20px;
+    }
+
+    &__item {
+        width: 288px;
+        height: 258px;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__add-super-team {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        gap: 0 30px;
+        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+        padding: 26px 14px;
+        align-items: center;
+    }
+
+    &__add-text {
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__item1 {
+        background-image: url(../../images/story-1.png);
+    }
+
+    &__item2 {
+        background-image: url(../../images/story-2.png);
+    }
+
+    &__item3 {
+        background-image: url(../../images/story-3.png);
+    }
+}
+
+@media (min-width: 768px) {
+    .story {
+        &__items {
+            flex-direction: row;
+            gap: 0 16px;
+            justify-content: space-between;
+        }
+
+        &__add-super-team {
+            opacity: 0;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px 0;
+            transition: opacity .3s linear;
+        }
+
+        &__item {
+            width: 232px;
+            height: 210px;
+
+            svg {
+                width: 34px;
+                height: 34px;
+            }
+
+            &:hover {
+                .story__add-super-team {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .story {
+        &__item {
+            width: 450px;
+            height: 400px;
+
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &__add-super-team {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+}

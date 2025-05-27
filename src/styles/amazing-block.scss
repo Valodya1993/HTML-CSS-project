@@ -1,0 +1,79 @@
+.amazing {
+	padding: 60px 0;
+
+	&__subtitle,
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 60px 25px;
+		margin-top: 66px;
+		justify-content: center;
+	}
+
+	&__item {
+		width: 288px;
+		position: relative;
+		padding-top: 10px;
+		padding-left: 77px;
+
+		&-title {
+			margin-bottom: 20px;
+		}
+
+		&-desc {
+			font-size: 14px;
+		}
+
+		& svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.amazing {
+		&__items {
+			gap: 60px 15px;
+		}
+
+		&__item {
+			width: 240px;
+
+			svg {
+				width: 60px;
+				height: 60px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.amazing {
+		&__item {
+			display: flex;
+			flex-direction: column;
+			width: 450px;
+			gap: 5px 0;
+			padding-left: 100px;
+
+			& svg {
+				width: 70px;
+				height: 70px;
+			}
+
+			&-title {
+				font-size: 24px;
+			}
+
+			&-desc {
+				font-size: 18px;
+			}
+		}
+	}
+}

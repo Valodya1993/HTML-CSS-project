@@ -1,8 +1,8 @@
-# Course Project: Responsive One-Page Company Website
+# Course Project: Responsive One-Page MOGO Company Website
 
 ## About the Project
 
-This project is a course assignment representing a responsive one-page website for a fictional company. The site is built using the mobile-first approach. The goal was to practice modern layout techniques, responsiveness, and basic interactivity with JavaScript.
+This project is a course assignment representing a responsive one-page website for MOGO company. The site is built using the mobile-first approach. The goal was to practice modern layout techniques, responsiveness, and basic interactivity with JavaScript.
 
 ## Features
 
@@ -83,11 +83,11 @@ http://localhost:1234
 ```
 
 
-# Курсовой проект: Одностраничный адаптивный сайт компании
+# Курсовой проект: Одностраничный адаптивный сайт компании MOGO
 
 ## О проекте
 
-Этот проект — курсовая работа, представляющая собой адаптивный одностраничный сайт условной компании. Сайт выполнен по принципу mobile-first. Цель — отработка современной верстки, адаптации под разные устройства и добавление базовой интерактивности с помощью JavaScript.
+Этот проект — курсовая работа, представляющая собой адаптивный одностраничный сайт компании MOGO. Сайт выполнен по принципу mobile-first. Цель — отработка современной верстки, адаптации под разные устройства и добавление базовой интерактивности с помощью JavaScript.
 
 ## Что реализовано
 
